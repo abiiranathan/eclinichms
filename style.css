@@ -1,0 +1,81 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+}
+
+@media (min-width: 1200px){
+    main{
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+h1, h2{
+    text-wrap: balance;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 64px;
+    background-color: #edfbf9;
+    border-bottom: 1px solid #d0cbcb;
+    padding: 0.25rem 1rem;
+
+    display: grid;
+    place-items: center;
+
+    .brand{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        gap: 1rem;
+
+        h1{
+            font-size: 1.6rem;
+        }
+
+        a{
+            text-transform: uppercase;
+        }
+    
+    }
+}
+
+.hero{
+    margin-bottom: 2rem;
+
+    h2{
+        margin: 1rem;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        list-style-position: initial;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+}
+

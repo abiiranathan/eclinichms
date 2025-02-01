@@ -1,0 +1,26 @@
+{
+	"name": "Eclinic HMS",
+	"short_name": "Eclinic HMS",
+	"scope": "/",
+	"start_url": "/",
+	"display": "fullscreen",
+	"theme_color": "#00bcd4",
+	"background_color": "#EEE",
+	"icons": [
+		{
+			"src": "/static/favicons/favicon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/static/favicons/favicon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "/static/favicons/apple-touch-icon.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		}
+	]
+}
