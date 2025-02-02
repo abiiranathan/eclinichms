@@ -29,6 +29,12 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -234,5 +240,27 @@
         <img src="images/inventory.png" alt="" />
       </div>
     </main>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Add 'in-view' class only once
+              entry.target.classList.add("in-view");
+
+              // Stop observing this element after animation plays once
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.1, // Trigger when 10% of the element is visible
+        }
+      );
+
+      const animatedDivs = document.querySelectorAll("main > div");
+      animatedDivs.forEach((el) => observer.observe(el));
+    </script>
   </body>
 </html>
