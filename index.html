@@ -5,182 +5,450 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Eclinic HMS | Affordable and robust EMR</title>
+  <title>Eclinic HMS — The Future of Healthcare</title>
   <meta name="description"
-    content="Eclinic Health Management System - secure, robust and affordable EMR for hospitals" />
-  <meta name="keywords" content="EMR, Medical records, EHR, Electronic Records" />
-  <!-- Opengraph tags -->
+    content="Eclinic Health Management System — secure, modern EMR for hospitals and medical centres." />
   <meta property="og:title" content="Eclinic HMS" />
-  <meta property="og:site_name" content="Eclinic HMS" />
-  <meta property="og:url" content="https://abiiranathan.github.io/eclinichms" />
-  <meta property="og:description" content="Secure, robust and affordable EMR for hospitals and medical centres" />
+  <meta property="og:description" content="Secure, robust and affordable EMR for hospitals and medical centres." />
   <meta property="og:type" content="website" />
-  <meta property="og:image"
-    content="https://github.com/abiiranathan/eclinichms/blob/main/images/favicons/favicon-512x512.png" />
-  <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicons/favicon-192x192.png" type="image/png" />
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Playfair+Display:wght@400;500&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="brand">
-        <a href="/eclinichms">
-          <img src="images/favicons/favicon-192x192.png" alt="Logo" width="48" height="48" />
-        </a>
-        <a href="/eclinichms">
-          <h1>Eclinic HMS</h1>
-        </a>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <img src="images/favicons/favicon-192x192.png" alt="Eclinic HMS logo" />
+        <span>Eclinic HMS</span>
+      </a>
+      <div class="nav-links">
+        <div class="nav-page-links" style="display:flex;gap:2.5rem;">
+          <a href="#modules">Modules</a>
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+        </div>
+        <a href="#contact" class="nav-cta">Get a Quote</a>
       </div>
-      <a href="#contact" class="cta-button hide-on-mobile">Get a Quote</a>
     </div>
-  </header>
+  </nav>
 
-  <main id="main">
-    <section class="hero-section">
-      <div class="container">
-        <div class="hero-text">
-          <h1>A Secure, Affordable and Robust EMR</h1>
-          <p>Streamline your workflow, enhance patient care, and improve your facility's efficiency with our
-            comprehensive Health Management System.</p>
-          <a href="#contact" class="cta-button">Request a Demo</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      Built for Africa's Healthcare
+    </div>
+    <h1>The <em>smarter</em> way to run your hospital.</h1>
+    <p class="hero-sub">Eclinic HMS unifies every department — from reception to pharmacy — into one seamless,
+      affordable platform.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Request a Demo</a>
+      <a href="#modules" class="btn-ghost">Explore Modules</a>
+    </div>
+    <div class="hero-screenshot reveal">
+      <div class="hero-screenshot-inner">
+        <div class="hero-screenshot-bar">
+          <span class="dot-r"></span>
+          <span class="dot-y"></span>
+          <span class="dot-g"></span>
         </div>
-        <div class="hero-image animate-on-scroll">
-          <img src="images/home.png" alt="Eclinic HMS Dashboard" />
-        </div>
+        <img src="images/home.png" alt="Eclinic HMS main dashboard showing patient management overview" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="modules" class="modules-section container">
-      <h2 class="animate-on-scroll">Available Modules</h2>
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="reveal reveal-delay-1">
+        <div class="stat-num">8+</div>
+        <div class="stat-label">Integrated Modules</div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Web-based, Zero Install</div>
+      </div>
+      <div class="reveal reveal-delay-3">
+        <div class="stat-num">ICD‑10</div>
+        <div class="stat-label">Diagnosis Database</div>
+      </div>
+      <div class="reveal reveal-delay-4">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Realtime Notifications</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODULES -->
+  <section class="section modules-section" id="modules">
+    <div class="section-inner">
+      <div class="section-eyebrow reveal">Available Modules</div>
+      <h2 class="section-title reveal">Every department, one platform.</h2>
+      <p class="section-body reveal">From the moment a patient walks in to the moment they leave — Eclinic HMS has every
+        step covered.</p>
       <div class="modules-grid">
-        <!-- Dynamically generated or hardcoded module cards -->
-        <div class="module-card animate-on-scroll">
+        <div class="module-card reveal reveal-delay-1">
+          <div class="module-icon" style="background:#e8f5ee;">🏥</div>
           <h3>Reception</h3>
-          <p>Patient Registration and biodata.</p>
+          <p>Patient registration, biodata capture, and instant visit creation.</p>
         </div>
-        <div class="module-card animate-on-scroll">
+        <div class="module-card reveal reveal-delay-2">
+          <div class="module-icon" style="background:#e8eeff;">👨‍⚕️</div>
           <h3>Doctor</h3>
-          <p>Patient clerkship and Management.</p>
+          <p>Full clerkship, vital signs, ICD-10 diagnosis, lab and prescription requests.</p>
         </div>
-        <div class="module-card animate-on-scroll">
+        <div class="module-card reveal reveal-delay-3">
+          <div class="module-icon" style="background:#fff8e8;">💰</div>
           <h3>Cashier</h3>
-          <p>Payments, Billing, and Financials.</p>
+          <p>Seamless billing, payments, and financial reporting.</p>
         </div>
-        <div class="module-card animate-on-scroll">
+        <div class="module-card reveal reveal-delay-4">
+          <div class="module-icon" style="background:#f0e8ff;">🔬</div>
           <h3>Laboratory</h3>
-          <p>Manage lab reports and analytics.</p>
+          <p>Lab request management, result capture, and analytics.</p>
         </div>
-        <div class="module-card animate-on-scroll">
+        <div class="module-card reveal reveal-delay-1">
+          <div class="module-icon" style="background:#e8f8f5;">💊</div>
           <h3>Pharmacy</h3>
-          <p>Dispensing, Stock Card, and Alerts.</p>
+          <p>Dispensing, real-time stock cards, and low-stock alerts.</p>
         </div>
-        <div class="module-card animate-on-scroll">
-          <h3>Admin</h3>
-          <p>Comprehensive statistics and monitoring.</p>
+        <div class="module-card reveal reveal-delay-2">
+          <div class="module-icon" style="background:#fee8e8;">📊</div>
+          <h3>Admin Dashboard</h3>
+          <p>Comprehensive statistics and monitoring across all departments.</p>
         </div>
-        <div class="module-card animate-on-scroll">
+        <div class="module-card reveal reveal-delay-3">
+          <div class="module-icon" style="background:#e8f0ff;">🏨</div>
           <h3>IPD & OPD</h3>
-          <p>Manage admissions and outpatients.</p>
+          <p>Manage hospital admissions and outpatient visits.</p>
         </div>
-        <div class="module-card animate-on-scroll">
+        <div class="module-card reveal reveal-delay-4">
+          <div class="module-icon" style="background:#f5f0e8;">📦</div>
           <h3>Inventory</h3>
-          <p>Manage all billable and general stock.</p>
+          <p>Manage all billable items and general stock with full audit trail.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="content-section animate-on-scroll">
-      <div class="container">
-        <div class="content-text">
-          <h2>Streamlined Patient Flow</h2>
-          <p>Eclinic HMS provides a clear, step-by-step process from patient arrival to departure, ensuring a smooth and
-            efficient experience for both staff and patients.</p>
-          <ul>
-            <li>Reception registers the patient and creates a visit.</li>
-            <li>Doctor clerks the patient, making requests for labs or prescriptions.</li>
-            <li>Realtime notifications are sent to relevant departments (Lab, Pharmacy).</li>
-            <li>Cashier handles all billing and payments seamlessly.</li>
-            <li>All actions are logged for reporting and analytics.</li>
+  <!-- FEATURE: Patient Flow -->
+  <section class="section" id="features">
+    <div class="section-inner">
+      <div class="feature-row">
+        <div class="feature-text">
+          <div class="section-eyebrow reveal">Reception</div>
+          <h2 class="section-title reveal">Effortless patient registration.</h2>
+          <p class="section-body reveal">Register patients in seconds. Instantly create visits, capture biodata, and
+            trigger workflows across every department — all without paper.</p>
+          <ul class="feature-checklist reveal">
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Instant patient search and deduplication
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              One-click visit creation with department routing
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Realtime queue management for all staff
+            </li>
           </ul>
         </div>
-        <div class="content-image">
-          <img src="images/reception.png" alt="Reception Module" />
+        <div class="feature-image-wrap reveal">
+          <img src="images/reception.png" alt="Reception module showing patient registration interface"
+            loading="lazy" />
         </div>
-      </div>
-    </section>
-
-    <section class="content-section animate-on-scroll" style="background-color:#fff;">
-      <div class="container">
-        <div class="content-text">
-          <h2>Efficient Clerkship and Diagnosis</h2>
-          <p>Our intuitive interface for doctors allows for quick and accurate patient clerkship, vital signs tracking,
-            and ICD-10 diagnosis, all in one place.</p>
-        </div>
-        <div class="content-image">
-          <img src="images/clerkship.png" alt="Clerkship Module" />
-          <img src="images/diagnosis.png" alt="ICD-10 Diagnosis" />
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section animate-on-scroll">
-      <div class="container">
-        <div class="content-text">
-          <h2>Powerful Admin Dashboard</h2>
-          <p>Get a complete overview of your facility's performance. The admin dashboard provides comprehensive
-            statistics from every department, giving you the insights you need to make informed decisions.</p>
-        </div>
-        <div class="content-image">
-          <img src="images/admin_01.png" alt="Admin Dashboard Statistics" />
-          <img src="images/admin_02.png" alt="Admin Dashboard Financials" />
-        </div>
-      </div>
-    </section>
-
-    <div id="contact" class="contact-section animate-on-scroll">
-      <h2>Get a Quotation</h2>
-      <p>Contact Dr. Abiira Nathan for a demo and pricing information.</p>
-      <div class="contact-details">
-        <span>Mobile: +0700198736</span>
-        <span>Email: nabiira2by2@gmail.com</span>
-        <a href="https://x.com/abiiranathan" target="_blank">Twitter: @abiiranathan</a>
-        <a href="https://github.com/abiiranathan" target="_blank">Github: @abiiranathan</a>
       </div>
     </div>
+  </section>
 
-  </main>
+  <section class="section" style="background:var(--tint);">
+    <div class="section-inner">
+      <div class="feature-row reverse">
+        <div class="feature-text">
+          <div class="section-eyebrow reveal">Doctor Module</div>
+          <h2 class="section-title reveal">Precision clerkship and diagnosis.</h2>
+          <p class="section-body reveal">An intuitive interface built for clinicians. Record vitals, clerk patients, and
+            code diagnoses using the full ICD-10 database — all from one screen.</p>
+          <ul class="feature-checklist reveal">
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Structured clerkship with history templates
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Full ICD-10 searchable diagnosis database
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Direct lab requests and e-prescriptions
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-stack reveal">
+          <div class="feature-image-wrap">
+            <img src="images/clerkship.png" alt="Doctor clerkship interface" loading="lazy" />
+          </div>
+          <div class="feature-image-wrap">
+            <img src="images/diagnosis.png" alt="ICD-10 diagnosis search" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="section">
+    <div class="section-inner">
+      <div class="feature-row">
+        <div class="feature-text">
+          <div class="section-eyebrow reveal">Triage & Vitals</div>
+          <h2 class="section-title reveal">Serial vitals tracking that matters.</h2>
+          <p class="section-body reveal">Monitor patient vitals over time with automatic trend charts. Triage staff can
+            record, compare, and flag abnormal readings in real time.</p>
+          <ul class="feature-checklist reveal">
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              BP, temperature, pulse, SpO₂, weight tracked over time
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Visual trend charts per admission
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Triage priority assignment built-in
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-stack reveal">
+          <div class="feature-image-wrap">
+            <img src="images/triage.png" alt="Triage module" loading="lazy" />
+          </div>
+          <div class="feature-image-wrap">
+            <img src="images/serial_vitals.png" alt="Serial vitals tracking chart" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--tint);">
+    <div class="section-inner">
+      <div class="feature-row reverse">
+        <div class="feature-text">
+          <div class="section-eyebrow reveal">Patient Dashboard</div>
+          <h2 class="section-title reveal">Complete patient history at a glance.</h2>
+          <p class="section-body reveal">Every visit, diagnosis, prescription, and lab result — organised
+            chronologically in one view. No more hunting through paper files.</p>
+          <ul class="feature-checklist reveal">
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Full medical history timeline
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Instant patient search across all records
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 12 12">
+                  <polyline points="2,6 5,9 10,3" />
+                </svg></span>
+              Secure role-based access control
+            </li>
+          </ul>
+        </div>
+        <div class="feature-image-stack reveal">
+          <div class="feature-image-wrap">
+            <img src="images/patient_dashboard.png" alt="Patient dashboard view" loading="lazy" />
+          </div>
+          <div class="feature-image-wrap">
+            <img src="images/patient_search.png" alt="Patient search interface" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY: Admin / Financials -->
+  <section class="section gallery-section">
+    <div class="section-inner">
+      <div class="section-eyebrow reveal">Admin & Financials</div>
+      <h2 class="section-title reveal">Data-driven decisions for leadership.</h2>
+      <p class="section-body reveal">The admin dashboard consolidates statistics from every department into clear,
+        actionable insights — revenue, expenditures, and departmental performance.</p>
+    </div>
+    <div class="gallery-scroll reveal">
+      <div class="gallery-card">
+        <img src="images/admin_01.png" alt="Admin dashboard overview" loading="lazy" />
+        <div class="gallery-card-label">Dashboard Overview</div>
+      </div>
+      <div class="gallery-card">
+        <img src="images/admin_02.png" alt="Admin financial statistics" loading="lazy" />
+        <div class="gallery-card-label">Financial Statistics</div>
+      </div>
+      <div class="gallery-card">
+        <img src="images/admin_03.png" alt="Admin analytics view" loading="lazy" />
+        <div class="gallery-card-label">Department Analytics</div>
+      </div>
+      <div class="gallery-card">
+        <img src="images/admin_04.png" alt="Admin reports" loading="lazy" />
+        <div class="gallery-card-label">Reports &amp; Exports</div>
+      </div>
+      <div class="gallery-card">
+        <img src="images/admin_05.png" alt="Admin monitoring" loading="lazy" />
+        <div class="gallery-card-label">Live Monitoring</div>
+      </div>
+      <div class="gallery-card">
+        <img src="images/billing.png" alt="Billing module" loading="lazy" />
+        <div class="gallery-card-label">Billing &amp; Receipts</div>
+      </div>
+      <div class="gallery-card">
+        <img src="images/expenditures.png" alt="Expenditures tracking" loading="lazy" />
+        <div class="gallery-card-label">Expenditure Tracking</div>
+      </div>
+      <div class="gallery-card">
+        <img src="images/inventory.png" alt="Inventory management" loading="lazy" />
+        <div class="gallery-card-label">Inventory Management</div>
+      </div>
+      <div class="gallery-card">
+        <img src="images/cashier_sidebar.png" alt="Cashier interface" loading="lazy" />
+        <div class="gallery-card-label">Cashier Interface</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKFLOW -->
+  <section class="section workflow-section" id="workflow">
+    <div class="section-inner">
+      <div class="section-eyebrow reveal" style="text-align:center;">Patient Journey</div>
+      <h2 class="section-title reveal" style="text-align:center;max-width:none;">How a visit flows through Eclinic.</h2>
+      <div class="workflow-steps reveal">
+        <div class="workflow-step">
+          <div class="step-num">1</div>
+          <h4>Reception</h4>
+          <p>Patient registered, visit created, and queue updated in seconds.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="step-num">2</div>
+          <h4>Triage</h4>
+          <p>Vitals recorded and patient prioritised before seeing a doctor.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="step-num">3</div>
+          <h4>Doctor</h4>
+          <p>Clerked, diagnosed, and prescribed — with lab requests sent instantly.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="step-num">4</div>
+          <h4>Lab / Pharmacy</h4>
+          <p>Realtime notifications push requests to relevant departments.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="step-num">5</div>
+          <h4>Cashier</h4>
+          <p>Automated invoice generated; payment processed and receipt issued.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <div class="quote-inner">
+      <span class="quote-mark">"</span>
+      <p class="quote-text reveal">Healthcare professionals deserve tools as sophisticated as the care they provide — at
+        a price that doesn't compromise it.</p>
+      <p class="quote-attr reveal">Dr. Abiira Nathan — Creator, Eclinic HMS</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-card reveal">
+        <h3>Let's talk about your facility.</h3>
+        <p>Whether you're a small clinic or a large hospital, Eclinic HMS scales with you. Contact us for a personalised
+          demo and pricing.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="tel:+256700198736">
+            <span class="contact-link-icon">📞</span>
+            +256 700 198 736
+          </a>
+          <a class="contact-link" href="mailto:nabiira2by2@gmail.com">
+            <span class="contact-link-icon">✉️</span>
+            nabiira2by2@gmail.com
+          </a>
+          <a class="contact-link" href="https://x.com/abiiranathan" target="_blank" rel="noopener">
+            <span class="contact-link-icon">𝕏</span>
+            @abiiranathan
+          </a>
+          <a class="contact-link" href="https://github.com/abiiranathan" target="_blank" rel="noopener">
+            <span class="contact-link-icon" style="font-size:.85rem;">GH</span>
+            github.com/abiiranathan
+          </a>
+        </div>
+      </div>
+      <div class="contact-form-side reveal reveal-delay-2">
+        <h3>Request a Demo</h3>
+        <p>Fill in your details and we'll get back to you within 24 hours.</p>
+        <div class="form-field">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Dr. Jane Namukasa" autocomplete="name" />
+        </div>
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@kijjansi-hospital.ug" autocomplete="email" />
+        </div>
+        <div class="form-field">
+          <label for="facility">Facility Name</label>
+          <input type="text" id="facility" name="facility" placeholder="Kijjansi General Hospital" />
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message"
+            placeholder="Tell us about your facility size and which modules interest you most…"></textarea>
+        </div>
+        <button class="form-submit" type="button" onclick="handleSubmit(this)">Send Message →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <p>&copy; 2024 Eclinic HMS. All Rights Reserved.</p>
+    <p>&copy; 2024 Eclinic HMS. All Rights Reserved. &nbsp;·&nbsp; Built by <a href="https://github.com/abiiranathan"
+        target="_blank" rel="noopener">Dr. Abiira Nathan</a></p>
   </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("in-view");
-            }
-          });
-        },
-        {
-          threshold: 0.1, // Trigger when 10% of the element is visible
-        }
-      );
-
-      const animatedElements = document.querySelectorAll(".animate-on-scroll");
-      animatedElements.forEach((el) => observer.observe(el));
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
