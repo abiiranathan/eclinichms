@@ -101,3 +101,22 @@ ${trimmedMessage}`
         btn.style.background = '';
     }, 3000);
 }
+
+/* ── Mobile nav ── */
+function toggleMenu() {
+    const btn = document.getElementById('nav-hamburger');
+    const links = document.getElementById('nav-links');
+    const isOpen = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen);
+}
+
+function closeMenu() {
+    document.getElementById('nav-links').classList.remove('open');
+    document.getElementById('nav-hamburger').setAttribute('aria-expanded', 'false');
+}
+
+// Close drawer when clicking outside
+document.addEventListener('click', (e) => {
+    const nav = document.getElementById('nav');
+    if (!nav.contains(e.target)) closeMenu();
+});

@@ -28,14 +28,20 @@
         <img src="images/favicons/favicon-192x192.png" alt="Eclinic HMS logo" />
         <span>Eclinic HMS</span>
       </a>
-      <div class="nav-links">
-        <div class="nav-page-links" style="display:flex;gap:2.5rem;">
-          <a href="#modules">Modules</a>
-          <a href="#features">Features</a>
-          <a href="#workflow">Workflow</a>
+      <div class="nav-links" id="nav-links">
+        <div class="nav-page-links">
+          <a href="#modules" onclick="closeMenu()">Modules</a>
+          <a href="#features" onclick="closeMenu()">Features</a>
+          <a href="#workflow" onclick="closeMenu()">Workflow</a>
         </div>
-        <a href="#contact" class="nav-cta">Get a Quote</a>
+        <a href="#contact" class="nav-cta" onclick="closeMenu()">Get a Quote</a>
       </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false"
+        onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 

@@ -127,6 +127,11 @@ ul {
   color: var(--ink);
 }
 
+.nav-links .nav-page-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
 .nav-cta {
   background: var(--ink);
   color: #fff !important;
@@ -853,8 +858,96 @@ ul {
   transition-delay: .4s;
 }
 
+/* ── HAMBURGER ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: none;
+  border: 1.5px solid rgba(0, 0, 0, .12);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform .3s var(--ease), opacity .3s;
+}
+
+/* Animate to ✕ when open */
+.nav-hamburger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-hamburger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-hamburger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    /* Slide-down drawer */
+    display: none;
+    position: absolute;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: rgba(255, 255, 255, .97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+    padding: .75rem 1.25rem 1.25rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .08);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links .nav-page-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-links .nav-page-links a {
+    padding: .9rem .25rem;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .06);
+  }
+
+  .nav-links .nav-page-links a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-cta {
+    margin-top: .75rem;
+    text-align: center;
+    padding: .75rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: .95rem;
+  }
+
   .feature-row {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -867,10 +960,6 @@ ul {
   .contact-inner {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-
-  .nav-links .nav-page-links {
-    display: none;
   }
 }
 
